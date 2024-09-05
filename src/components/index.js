@@ -1,12 +1,17 @@
-import Button from './Button';
-import Footer from './Footer';
-import Heading from './Heading';
-import Hero from './Hero';
-import HeroCard from './HeroCard';
-import HowItWorks from './HowItWorks';
-import Logo from './Logo';
-import ModelCard from './ModelCard';
-import Navbar from './Navbar';
-import ServiceCard from './ServiceCard';
-import Widget from './Widget';
-export { Button, Footer, Heading, Hero, HeroCard, HowItWorks, Logo, ModelCard, Navbar, ServiceCard, Widget };
+import Footer from "./Footer";
+import Hero from "./Hero";
+import HowItWorks from "./HowItWorks";
+import Logo from "./Logo";
+import Navbar from "./Navbar";
+import { Heading, ModelCard, ServiceCard } from "./ui";
+import { PrimaryBtn } from "./ui/button";
+import Widget from "./Widget";
+export {
+    Footer,
+    Heading, Hero,
+    HowItWorks,
+    Logo,
+    ModelCard, Navbar,
+    PrimaryBtn, ServiceCard, Widget
+};
+

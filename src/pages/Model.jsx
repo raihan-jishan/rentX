@@ -1,9 +1,11 @@
 import { Heading, ModelCard } from "../components";
 import { carModels } from "../constants";
+import { PrimaryAnimation } from "../global/animation";
 
 const Model = () => {
   return (
-    <section
+    <PrimaryAnimation>
+      <section
       className="bg-white text-black dark:bg-gray-900 dark:text-white"
       id="model"
     >
@@ -29,6 +31,7 @@ const Model = () => {
         })}
       </div>
     </section>
+    </PrimaryAnimation>
   );
 };
 

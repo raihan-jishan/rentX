@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Button } from "../components";
+import { PrimaryBtn } from "../components";
 import { AppleStoreIcon, GooglePlay, PaymentIcon } from "../constants/icons";
 import { carModels } from "../constants/index";
 
@@ -25,7 +25,7 @@ const StartJourney = () => {
             </span>
           </p>
           <div className="flex items-center justify-center gap-10 max-lg:flex-col max-lg:block max-lg:w-full ">
-            <Button
+            <PrimaryBtn
               text={"Google Play"}
               roundedFull
               Animation
@@ -33,7 +33,7 @@ const StartJourney = () => {
               iconLeft={<GooglePlay size={35} />}
             />
             <div className="mt-4">
-              <Button
+              <PrimaryBtn
                 text={"Apple Store"}
                 roundedFull
                 Animation

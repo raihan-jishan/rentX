@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Button = ({
+export const PrimaryBtn = ({
   text,
   roundedFull,
   roundedMedium,
@@ -11,11 +11,11 @@ const Button = ({
   pxFull,
   Animation,
   path,
-  iconLeft
+  iconLeft,
 }) => {
   return (
     <Link
-     to={path}
+      to={path}
       className={`p-3  flex gap-3 items-center justify-center   font-semibold  capitalize ${
         roundedFull
           ? "rounded-full"
@@ -30,9 +30,7 @@ const Button = ({
           : "bg-black dark:bg-gray-300  text-gray-100 dark:text-black "
       } ${pxFull ? "px-12 " : "px-4"} ${Animation ? "hover:gap-6 " : ""}`}
     >
-    {iconLeft} {text} {icon}
+      {iconLeft} {text} {icon}
     </Link>
   );
 };
-
-export default Button;

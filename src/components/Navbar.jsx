@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { Logo } from "../components/ui";
 import { navLinks } from "../constants";
 import { BarscloseIcon, BarsIcon, SearchIcon } from "../constants/icons";
-import Button from "./Button";
-import Logo from "./Logo";
-
+import { PrimaryAnimation as Animation } from '../global/animation';
+import { PrimaryBtn } from "./ui";
 const Navbar = () => {
   // initialize the state
   const [nav, setNav] = useState(false);
@@ -12,7 +12,8 @@ const Navbar = () => {
   // closeNav function
   const closeNav = () => setNav(false);
   return (
-    <nav className="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+   <Animation className={'sticky top-0'} >
+     <nav className="bg-white dark:bg-gray-900   w-full z-20  start-0 border-b border-gray-200 dark:border-gray-600 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Logo />
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse  gap-5 max-lg:gap-0">
@@ -21,7 +22,11 @@ const Navbar = () => {
             <SearchIcon size={32} />
           </div>
 
-          <Button text={"Start journey"} roundedFull path={'/startjourney/0'}/>
+          <PrimaryBtn
+            text={"Start journey"}
+            roundedFull
+            path={"/startjourney/0"}
+          />
 
           <button
             type="button"
@@ -56,6 +61,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+   </Animation>
   );
 };
 

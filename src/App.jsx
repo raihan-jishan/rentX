@@ -5,7 +5,7 @@ import { StartJourney } from "./pages";
 
 function App() {
   return (
-    <div className="font-Poppins bg-white dark:bg-gray-900">
+    <div className="font-Poppins bg-white  dark:bg-gray-900">
       <Navbar />
       <Routes>
         <Route path="/" element={<Widget />} />
